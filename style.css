@@ -1,0 +1,213 @@
+body {
+    background-color: #efda95;
+    background-image: url("images/comic_background.gif");
+    font-family: arial;
+}
+
+.mainsheet {
+    background-color: #f1efe5;
+    width: 65%;
+    margin: 30px auto;
+    border: 7px solid black;
+    border-image: url("images/sheetborder.png");
+    border-image-slice: 7;
+    border-image-outset: 1;
+    border-image-repeat: repeat;
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:
+    space-around;
+}
+
+.headerimg {
+    display: inline-block;
+    padding: 30px;
+}
+
+.headernav {
+    display: inline-block;
+    padding: 0px 40px;
+    align-content: center;
+    text-align: center;
+    text-wrap: nowrap;
+}
+
+.content-grid a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 0px 30px;
+}
+
+.content-grid {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 30px;
+    justify-content: flex-start;
+}
+
+.text-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.bodycontent {
+    padding: 10px;
+    text-align: center;
+    width: 45%;
+    justify-items: center;
+    display: grid;
+}
+
+.content {
+    justify-items: center;
+    justify-content: center;
+    display: grid;
+}
+
+.desc {
+    width: 250px;
+    text-align: center;
+    justify-self: center;
+}
+
+.subimage {
+    width: 100%;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    font-family: arial;
+
+}
+
+.pthumbnail {
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.thumbnail {
+    margin: auto;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.bigimage {
+    justify-self: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.comicpages {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    width: 100%;
+}
+
+.comicspread {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    width: 100%;
+}
+
+.comicpages img, .comicspread img {
+    width: 100%;
+    justify-self: center;
+    padding: 5px 0px;
+}
+
+.headernav a:hover {
+    opacity: 50%;
+}
+
+.pthumbnail:hover, .thumbnail:hover {
+    opacity: 70%;
+}
+
+@media screen and (max-width: 600px) {
+    .mainsheet {
+    width: 90%;
+    }
+
+    .header {
+    justify-content: center;
+    }
+
+    .headerimg {
+    padding: 10px;
+    width: 90%;
+    }
+
+    .headernav {
+    padding: 0px;
+    transform: scale(0.6) translate(0px, -50px);
+    height: 120px;
+    }
+
+    .portfolio-grid {
+    padding: 0px;
+    }
+
+    .content-grid {
+    padding: 0px;
+    }
+
+    .bigimage {
+    width: 100%;
+    }
+
+    .bodycontent {
+    width: 80%;
+    }
+
+    .text-grid {
+    width: 80%;
+    }
+
+    .bodycontent p {
+    width: 90%;
+    }
+
+    .desc {
+    width: 95%;
+    text-align: center;
+    }
+
+    .footer {
+    display: grid;
+    transform: scale(0.6);
+    justify-content: center;
+    }
+
+    .footer p {
+    width: 75%;
+    justify-self: center;
+    }
+
+    .pthumbnail {
+    padding: 5px 5px;
+    }
+
+    .thumbnail {
+    padding: 10px 0px;
+    font-size: 12px;
+    width: 45%;
+    }
+
+    .thumbnail img {
+    width: 100%;
+    }
+}
